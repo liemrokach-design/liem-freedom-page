@@ -70,7 +70,7 @@
     ).observe(offer);
   }
 
-  // Hero video: swap the poster/play button for a Google Drive embed on click
+  // Hero video: swap the poster/play button for a YouTube embed on click
   var heroVideo = document.getElementById("heroVideo");
   var heroVideoTrigger = document.getElementById("heroVideoTrigger");
 
@@ -78,9 +78,9 @@
     heroVideoTrigger.addEventListener("click", function () {
       var videoId = heroVideo.getAttribute("data-video-id");
       var iframe = document.createElement("iframe");
-      iframe.src = "https://drive.google.com/file/d/" + videoId + "/preview";
+      iframe.src = "https://www.youtube.com/embed/" + videoId + "?autoplay=1";
       iframe.className = "hero-video-frame";
-      iframe.setAttribute("allow", "autoplay; fullscreen");
+      iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
       iframe.setAttribute("allowfullscreen", "");
       iframe.setAttribute("title", "סרטון של ליאם");
       heroVideo.innerHTML = "";
