@@ -69,4 +69,22 @@
       { threshold: 0.2 }
     ).observe(offer);
   }
+
+  // Hero video: swap the poster/play button for a Google Drive embed on click
+  var heroVideo = document.getElementById("heroVideo");
+  var heroVideoTrigger = document.getElementById("heroVideoTrigger");
+
+  if (heroVideo && heroVideoTrigger) {
+    heroVideoTrigger.addEventListener("click", function () {
+      var videoId = heroVideo.getAttribute("data-video-id");
+      var iframe = document.createElement("iframe");
+      iframe.src = "https://drive.google.com/file/d/" + videoId + "/preview";
+      iframe.className = "hero-video-frame";
+      iframe.setAttribute("allow", "autoplay; fullscreen");
+      iframe.setAttribute("allowfullscreen", "");
+      iframe.setAttribute("title", "סרטון של ליאם");
+      heroVideo.innerHTML = "";
+      heroVideo.appendChild(iframe);
+    });
+  }
 })();
