@@ -256,6 +256,18 @@
     if (privacyWrap && config.PRIVACY_POLICY_URL) {
       privacyWrap.innerHTML = ' <a href="' + config.PRIVACY_POLICY_URL + '" class="privacy-link">מדיניות הפרטיות</a>';
     }
+
+    var priceContact = document.getElementById("priceContact");
+    if (priceContact && config.WHATSAPP_URL) {
+      var link = document.createElement("a");
+      link.href = config.WHATSAPP_URL;
+      link.textContent = priceContact.textContent;
+      link.rel = "noopener";
+      link.target = "_blank";
+      link.className = "price-contact-link";
+      priceContact.textContent = "";
+      priceContact.appendChild(link);
+    }
   })();
 
   // ---------------------------------------------------------------

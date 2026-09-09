@@ -46,9 +46,9 @@ window.SITE_CONFIG = {
   YOUTUBE_URL: "",
 
   // Not used as a primary CTA (the page's single conversion action is
-  // the lead form) — only rendered as a secondary footer contact link
-  // if provided.
-  WHATSAPP_URL: "",
+  // the lead form) — rendered as a secondary footer contact link, and
+  // the "פרטים בפרטי" price box links here too.
+  WHATSAPP_URL: "https://wa.me/972506805252",
   CONTACT_EMAIL: "",
 
   // Link to a real, published privacy policy. Leave empty to omit the

@@ -536,6 +536,8 @@ section{ padding: clamp(4.5rem, 10vw, 8.5rem) 0; position:relative; }
 }
 .price-value{ font-size: 1.15rem; margin-bottom: .3rem; }
 .price-total{ font-family: var(--font-display); font-weight:800; font-size: 1.3rem; color: var(--accent-strong); }
+.price-contact-link{ text-decoration: underline; text-underline-offset: 3px; }
+.price-contact-link:hover{ color: var(--text); }
 
 .lead-form{ display:flex; flex-direction:column; gap: 1.4rem; margin-top: clamp(1.75rem, 4.5vw, 2.5rem); }
 .form-row{ display:flex; flex-direction:column; gap: .45rem; }
