@@ -10,7 +10,7 @@
 window.SITE_CONFIG = {
   // Real hero photo of Liam (front-facing, casual/quality clothing).
   // Example: "assets/hero/liam.jpg"
-  HERO_IMAGE: "",
+  HERO_IMAGE: "assets/hero/liam.jpg",
 
   // Personal story video for the "story" section.
   // Accepts a YouTube video ID (e.g. "dQw4w9WgXcQ") — the page renders
